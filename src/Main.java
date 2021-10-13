@@ -8,6 +8,7 @@ public class Main {
     private static native void sayHello();
 
     static{
-        System.loadLibrary("Hello");
+        System.out.println("library:" + System.getProperty("java.library.path"));
+        System.loadLibrary("libhello");
     }
 }
